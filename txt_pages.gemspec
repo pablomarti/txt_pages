@@ -7,11 +7,11 @@ require "txt_pages/version"
 Gem::Specification.new do |s|
   s.name        = "txt_pages"
   s.version     = TxtPages::VERSION
-  s.authors     = ["TODO: Your name"]
-  s.email       = ["TODO: Your email"]
-  s.homepage    = "TODO"
-  s.summary     = "TODO: Summary of TxtPages."
-  s.description = "TODO: Description of TxtPages."
+  s.authors     = ["Pablo Marti"]
+  s.email       = ["pablo.marti89@gmail.com"]
+  s.homepage    = "https://github.com/pablomarti/txt_pages"
+  s.summary     = "Manage static text pages with a single resource."
+  s.description = "Mountable engine that generates a resource for managing text pages in your website using permalinks."
 
   s.files = Dir["{app,config,db,lib}/**/*"] + ["MIT-LICENSE", "Rakefile", "README.rdoc"]
   s.test_files = Dir["test/**/*"]

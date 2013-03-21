@@ -1,3 +1,20 @@
 = TxtPages
 
-This project rocks and uses MIT-LICENSE.
+Manage static text pages with a single resource.
+
+Mountable engine that generates a resource for managing text pages in your website using permalinks.
+
+
+== Installation
+
+1. Add to your gemfile: <tt>gem 'txt_pages', :git => 'git://github.com/pablomarti/txt_pages.git'</tt>
+
+2. Run <tt>bundle</tt>
+
+3. Execute: <tt>rails generate txt_pages:install</tt>
+
+4. Run migrations: <tt>rake db:migrate</tt>
+
+5. Add to your routes.rb: <tt>mount TxtPages::Engine => "/txt_pages", :as => "txt_pages"</tt>
+
+6. Add to your routes.rb at the end of the file: <tt>get ':id', to: 'txt_pages::pages#show', as: :page</tt>
